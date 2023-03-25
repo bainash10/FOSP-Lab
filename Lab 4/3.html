@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register - Khwopa Online Forum</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin: 50px 300px;
+        }
+        input[type=text],input[type=password]{
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            resize: vertical;
+        }
+        input[type=submit]{
+            background-color: #d9534f;
+            color: white;
+            padding: 12px 20px;
+            border-color: #d43f3a;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: #d43f3a;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/regiter.php" method="POST">
+        <div class="container">
+            <h1>Register</h1>
+            <p>Please Fill in the form to create an account.</p>
+            <hr>
+            <input type="text" placeholder="Enter Email" name="email" required><br>
+            <input type="password" placeholder="Enter Password" name="psw" required><br>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <hr>
+            <p>By creating an account you agree to our <a href="#">Terms &Privacy.</a></p>
+            <input type="submit" value="Register" />
+        </div>
+
+        <div class="container">
+            <p>Already have an Account?<a href="#">Sign in</a></p>
+        </div>
+    </form>
+</body>
+
+</html>
