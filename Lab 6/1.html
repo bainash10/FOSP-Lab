@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            FOSP lab 6
+        </title>
+    </head>
+    <body>
+        <h1>Khwopa ENgineering College
+            <form name="frm1" method="post" action="">
+                ForeGround Color
+                <select name="fColor" onchange="fg_Color(this.value);">
+                    <option value="--">Please Select</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="blue">blue</option>
+                </select>
+           
+        </h1>
+        background color
+        <select name="bColor" onchange="bg_Color(this.value);"> <option value="--">Please Select</option> 
+            
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+        </select>
+    </form>
+        <script>
+            function fg_Color(abc)
+            {
+                    if(abc=="--")
+                    alert("Please Select Color!");
+                    else
+                    document.fgColor=abc;
+            }
+                    function bg_Color(abc)
+                    {
+                        if(abc=="--")
+                        alert("Please Select color!");
+                        else
+                        document.bgColor=abc;
+                    }
+            
+         </script>
+    </body>
+</html>

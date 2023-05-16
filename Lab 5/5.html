@@ -1,0 +1,39 @@
+<html>
+    <head><title>JavaScript</title></head>
+    <body>
+        <script>
+        function acircle()
+        {
+            var a= parseInt(document.getElementById("radius").value);
+            var c= 3.14*a*a;
+            document.getElementById("radius").value=c;
+        }
+        function arec()
+        {
+            var l= parseInt(document.getElementById("length").value);
+            var b= parseInt(document.getElementById("breadth").value);
+            var z= l*b;
+            document.getElementById("Area").value=z;
+        }
+        function atri()
+        {
+            var x= parseInt(document.getElementById("breadth2").value);
+            var h= parseInt(document.getElementById("height").value);
+            var y= (1/2)*x*h;
+            document.getElementById("Area2").value=y;
+        }
+    </script>
+    <input type="text" id="radius">Radius</input><br>
+    <button onclick="acircle()">Generate</button><br><hr>
+
+    <input type="text" id="length">Length</input><br>
+    <input type="text" id="breadth">Breadth</input><br>
+    <input type="text" id="Area">Area</input><br>
+    <button onclick="arec()">Generate</button><br><hr>
+
+    <input type="text" id="breadth2">Breadth</input><br>
+    <input type="text" id="height">Height</input><br>
+    <input type="text" id="Area2">Area</input><br>
+    <button onclick="atri()">Generate</button><br>
+    </body>
+</html>

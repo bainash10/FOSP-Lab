@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>4</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var date = new Date();
+            var h = date.getHours();
+            document.write("Hour = " + h + ",   so  ");
+            checkhour();
+            function checkhour(i){
+                if (i<12)
+                document.write("good morning");
+                else if (i>12 && i<18)
+                    document.write("good afternoon");
+                else
+                document.write("good evening");
+                }          
+        </script>
+    </body>
+    </html>
